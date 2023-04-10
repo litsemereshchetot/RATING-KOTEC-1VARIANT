@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Parking App</title>
+  <!-- Подключаем Bootstrap -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Подключаем наши стили -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Приложение парковки</h1>
+    <form>
+      <div class="form-group">
+        <label for="make">Марка</label>
+        <input type="text" class="form-control" id="make" placeholder="Введите марку машины">
+      </div>
+      <div class="form-group">
+        <label for="model">Модель</label>
+        <input type="text" class="form-control" id="model" placeholder="Введите модель машины">
+      </div>
+      <div class="form-group">
+        <label for="color">Цвет</label>
+        <input type="text" class="form-control" id="color" placeholder="Введите цвет машины">
+      </div>
+      <div class="form-group">
+        <label for="number">Номер</label>
+        <input type="text" class="form-control" id="number" placeholder="Введите номер машины">
+      </div>
+      <button type="button" class="btn btn-primary" id="add-button">Добавить парковку</button>
+    </form>
+    <hr>
+    <h2>Список парковок</h2>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>Марка</th>
+          <th>Модель</th>
+          <th>Цвет</th>
+          <th>Номер</th>
+        </tr>
+      </thead>
+      <tbody id="parking-list">
+      </tbody>
+    </table>
+  </div>
+  <!-- Подключаем jQuery и скрипт приложения -->
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
